@@ -1,0 +1,37 @@
+.triangle .text {
+ color:white;
+}
+.triangle {
+  position: relative;
+  width: 150px;        /* достаточно места */
+  height: 100px;
+  background: white;
+  border: 8px solid red;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);  /* форма треугольника */
+  overflow: hidden;     /* чтобы всё, что выходит за пределы треугольника, обрезалось */
+}
+
+.triangle .text {
+  position: absolute;
+  bottom: 10%;         /* текст снизу, чтобы влезал */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;          /* текст занимает почти всю ширину */
+  text-align: center;
+  font-size: 14px;     /* не слишком большой шрифт */
+  color: white;        /* белый текст */
+  word-spacing: 6px;   /* пространство между словами */
+  line-height: 1.4;    /* межстрочное расстояние */
+  font-weight: bold;
+  word-break: break-word;  /* перенос слов, если не влезают */
+}
+.triangle h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.triamgle .text {
+   line-height:1.6;
+}
+.triangle .text p {
+   margin-top: 60px;
+}
